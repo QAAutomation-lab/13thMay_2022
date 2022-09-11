@@ -129,7 +129,7 @@ public class SeleniumUtility {
 		action.moveToElement(src).dragAndDrop(src, target).build().perform();
 	}
 
-	public void cleanUp() {
+	public void tearDown() {
 		driver.close();
 	}
 
@@ -149,25 +149,33 @@ public class SeleniumUtility {
 		action.moveToElement(element).doubleClick().perform();
 	}
 
-//	public void switchToRequiredFrameUsingName(String name) {
-//		driver.switchTo().frame(name);
-//	}
-//
-//	public void switchToRequiredFrameUsingWebElement(WebElement element) {
-//		driver.switchTo().frame(element);
-//	}
-//
-//	public void switchToRequiredFrameUsingIndex(int index) {
-//		driver.switchTo().frame(index);
-//	}
-//	
-//	public void switchControlBackToMainPage() {
-//		driver.switchTo().defaultContent();
-//	}
-//	
-//	public WebElement getActiveElement() {
-//		return driver.switchTo().activeElement();
-//	}
+	public void switchToRequiredFrameUsingName(String name) {
+		driver.switchTo().frame(name);
+	}
+
+	public void switchToRequiredFrameUsingWebElement(WebElement element) {
+		driver.switchTo().frame(element);
+	}
+
+	public void switchToRequiredFrameUsingIndex(int index) {
+		driver.switchTo().frame(index);
+	}
+	
+	public void switchControlBackToMainPage() {
+		driver.switchTo().defaultContent();
+	}
+	
+	public WebElement getActiveElement() {
+		return driver.switchTo().activeElement();
+	}
+	
+	public String getPageTitle() {
+		return driver.getTitle();
+	}
+	
+	public String getPageUrl() {
+		return driver.getCurrentUrl();
+	}
 
 	// methods for select dropdown
 	// title

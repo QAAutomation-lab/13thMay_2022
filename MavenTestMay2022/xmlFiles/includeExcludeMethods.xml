@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sample Test Suite" verbose="1" >
+  <test name="Method Test Cases" >
+    <classes>
+       <class name="com.automationtesting.unittesting.IncludeAndExcludeTestMethods">
+        <methods>
+        <include name="addLocationTestCase" />
+        <include name="addDepartmentTestCase" />
+        <exclude name="addEmployeeTestCase" />
+      </methods>
+       </class>
+    </classes>
+  </test>
+</suite>

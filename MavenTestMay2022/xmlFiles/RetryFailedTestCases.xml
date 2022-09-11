@@ -1,0 +1,10 @@
+<suite name="Retry to execute failed testcase" >
+	<listeners>
+			        <listener class-name="com.automationtesting.advanceUnitTestingConcepts.RetryListener"/>
+			  </listeners>
+  <test name="Test 1">
+    <classes>
+      <class name="com.automationtesting.advanceUnitTestingConcepts.TestRety"/>
+    </classes>
+  </test>
+</suite>

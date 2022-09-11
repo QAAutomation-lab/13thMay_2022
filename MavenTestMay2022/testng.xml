@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testngsamples.Actitime_InvocationCount"/>
+      <class name="testngsamples.FirstTestNgWebScript"/>
+      <class name="testngsamples.Actitime_Enabled"/>
+      <class name="testngsamples.Actitime_Timeout"/>
+      <class name="testngsamples.Actitime_ExceptionAndTimeout"/>
+      <class name="testngsamples.Actitime_DependsOn"/>
+      <class name="testngsamples.Actitime_Priority"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

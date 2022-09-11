@@ -1,0 +1,7 @@
+<suite name="Parallel test suite"  parallel="methods"  thread-count="2">
+  <test name="Firefox">
+    <classes>
+      <class name="com.automationtesting.unittesting.TestParallelExecution"/>
+    </classes>
+  </test>
+</suite>
