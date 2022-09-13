@@ -1,26 +1,18 @@
-<suite name="Parallel test suite"  parallel="methods"  thread-count="2">
-  <test name="Firefox">
-  <parameter name="browser" value="ff"/>
-	<parameter name="username" value="admin"/>
-	<parameter name="password" value="admin"/>
-    <classes>
-      <class name="com.automationtesting.unittesting.ParallelExecutionTest"/>
-    </classes>
-  </test>
-  <test name="Chrome">
-  <parameter name="browser" value="gc"/>
-	<parameter name="username" value="admin"/>
-	<parameter name="password" value="admin"/>
-    <classes>
-      <class name="com.automationtesting.unittesting.ParallelExecutionTest"/>
-    </classes>
-  </test>
-  <test name="IE">
-  <parameter name="browser" value="ie"/>
-	<parameter name="username" value="admin"/>
-	<parameter name="password" value="admin"/>
-    <classes>
-      <class name="com.automationtesting.unittesting.ParallelExecutionTest"/>
-    </classes>
-  </test>
+<suite name="Parallel test suite" parallel="methods" thread-count="2">
+	<test name="Firefox">
+		<parameter name="browser" value="firefox" />
+		<parameter name="username" value="admin" />
+		<parameter name="password" value="Test@123" />
+		<classes>
+			<class name="testngsamples.ParallelExecutionTest" />
+		</classes>
+	</test>
+	<test name="Chrome">
+		<parameter name="browser" value="chrome" />
+		<parameter name="username" value="admin" />
+		<parameter name="password" value="Test@123" />
+		<classes>
+			<class name="testngsamples.ParallelExecutionTest" />
+		</classes>
+	</test>
 </suite>

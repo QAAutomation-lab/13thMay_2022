@@ -30,10 +30,8 @@ public class ActitimeLogin extends SeleniumUtility{
 			driver.findElement(By.id("loginButton")).click();
 			ExcelUtility.updateExcelContent(".\\src\\test\\resources\\AppData\\AppTestData.xlsx", "sheet1", 2, 3,"Passed");
 	}
-	
 	@AfterTest
 	public void cleanUp() {
 		tearDown();
 	}
-	
 }

@@ -4,20 +4,21 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import utilites.BaseUtil;
 
-public class DataProviderExample extends BaseUtil {
+import utilities.SeleniumUtility;
+
+public class DataProviderExample extends SeleniumUtility {
 
 	/**
 	 * This test method declares that its data should be supplied by the Data
 	 * Provider "getdata" is the function name which is passing the data Number of
 	 * columns should match the number of input parameters
 	 */
-//	@Test(dataProvider = "getData")
-//	public void setData(String username, String password) {
-//		System.out.println("you have provided username as::" + username);
-//		System.out.println("you have provided password as::" + password);
-//	}
+	@Test(dataProvider = "getData")
+	public void setData(String username, String password) {
+		System.out.println("you have provided username as::" + username);
+		System.out.println("you have provided password as::" + password);
+	}
 
 	@Test(dataProvider = "testData")
 	public void testLoginOfVtiger(String browser, String username, String password) {
@@ -26,7 +27,7 @@ public class DataProviderExample extends BaseUtil {
 		driver.findElement(By.id("username")).sendKeys(username);
 		driver.findElement(By.id("password")).clear();
 		driver.findElement(By.id("password")).sendKeys(password, Keys.ENTER);
-		driver.close();
+		//driver.close();
 	}
 
 	@DataProvider(name = "testData")

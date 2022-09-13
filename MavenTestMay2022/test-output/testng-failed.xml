@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="datadriventesting.ActitimeLogin">
+      <class name="exdentreport.ExtentDemo">
         <methods>
-          <include name="getData"/>
-          <include name="actitimeLogin"/>
-          <include name="cleanUp"/>
+          <include name="TestCase2"/>
+          <include name="startTest"/>
+          <include name="endTest"/>
         </methods>
-      </class> <!-- datadriventesting.ActitimeLogin -->
+      </class> <!-- exdentreport.ExtentDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

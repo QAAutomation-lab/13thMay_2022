@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Sample Suite">
+  <test name="testing">
+  	<groups>
+      <run>
+        <exclude name="Smoke Test"/>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+       <class name="day22.testngadvxml.GroupExamples" />
+    </classes>
+  </test>
+</suite>

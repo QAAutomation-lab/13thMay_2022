@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Parallel test suite]">
+  <test thread-count="2" parallel="methods" name="Firefox(failed)">
+    <parameter name="password" value="admin"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="testngsamples.ParallelExecutionTest">
+        <methods>
+          <include name="testLoginOfVtiger" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testngsamples.ParallelExecutionTest -->
+    </classes>
+  </test> <!-- Firefox(failed) -->
+  <test thread-count="2" parallel="methods" name="Chrome(failed)">
+    <parameter name="password" value="admin"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="testngsamples.ParallelExecutionTest">
+        <methods>
+          <include name="testLoginOfVtiger" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testngsamples.ParallelExecutionTest -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->

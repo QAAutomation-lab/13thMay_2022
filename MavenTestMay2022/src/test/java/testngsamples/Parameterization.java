@@ -4,11 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import utilities.SeleniumUtility;
 
-import utilites.BaseUtil;
 
-
-public class Parameterization extends BaseUtil {
+public class Parameterization extends SeleniumUtility {
 	
 	@Parameters({ "browser" })
 	@Test
