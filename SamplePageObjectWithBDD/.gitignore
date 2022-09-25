@@ -1,0 +1,11 @@
+.mtj.tmp/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+target/
+pom.xml.tag
+*.classpath
+*.project
